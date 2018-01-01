@@ -1,0 +1,1157 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0055)http://emp.byui.edu/camerong/cs235/assignments_s04.html -->
+<HTML><HEAD>
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR>
+<META http-equiv=content-Type content="text/html; charset=utf-8">
+<STYLE>P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 1px
+}
+SPAN.WPParaBox {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+DIV.WPParaBoxWrapper {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; FONT-STYLE: normal; FONT-FAMILY: "Times New Roman", serif
+}
+</STYLE>
+</HEAD>
+<BODY>
+<P><SPAN style="FONT-WEIGHT: 700; TEXT-DECORATION: underline"><A 
+name="Assignment 0"><FONT size=4>Assignment #0</FONT></A></SPAN></P><B>Due: 
+</B>Tue, May 4, 2004 by midnight.
+<P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 0">Assignment 
+#0 Grading Sheet</A></P>
+<P>&nbsp;</P>
+<P><U>Part 1</U></P>
+<UL>
+  <LI>(5 points) Log into any Linux machine in AUS 213 and change your password 
+  from the default password to your own password. 
+  <LI>(5 points) Send an email to <A 
+  href="mailto:camerong@byui.edu">camerong@byui.edu</A> and include in the 
+  message the following information:
+  <P>- Name</P>
+  <P>- Major</P>
+  <P>- Reason for taking CS 235</P>
+  <P>- Previous programming classes</P>
+  <P>- Will Brother Cameron's office hours work for you this 
+semester?</P></LI></UL><U>Part 2</U>
+<UL>
+  <LI>(10 points) You will receive an email on your campus account after you 
+  send me an email.&nbsp; The email will contain further instructions on the 
+  rest of this assignment including when its due.&nbsp; Simply follow the 
+  instructions in the email. </LI></UL>
+<P><BR></P>
+<P><SPAN style="FONT-WEIGHT: 700; COLOR: #000000; TEXT-DECORATION: underline"><A 
+name="Assignment 1"><FONT size=4>Assignment #1</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN style="FONT-WEIGHT: bold">Due: </SPAN>Mon, 
+May 10, 2004 by </SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P>
+<P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 1">Assignment 
+#1 Grading Sheet</A></P><BR>
+<P>Create a class definition for a set of integers. A set is a collection of 
+data without repetition or ordering. The class should have only two private data 
+members: a pointer to a dynamically allocated array of integers and an integer 
+that holds the size of the set. </P>
+<P>&nbsp;</P>
+<P>Make sure your set has the following member functions:</P>
+<UL>
+  <LI>A constructor to create an empty set. 
+  <LI>A copy constructor.&nbsp; 
+  <LI>A function to add an element to the set. It should check for duplicates. 
+  <LI>A function to return the number of elements in the set. 
+  <LI>A function that determines if an element is in the set. It should return 
+  true if the element is present and false if it is not. </LI></UL>
+<P>&nbsp;</P>
+<P>Create the following overloaded operators</P>
+<UL>
+  <LI>&amp;&amp; operator for intersection. 
+  <LI>|| operator for union. 
+  <LI>- for difference. 
+  <LI>= operator to allow one set to be copied to another set (i.e. A = B 
+  &amp;&amp; C;) </LI></UL>
+<P>The program should include a test program that reads in two sets of random 
+integers from an input file.&nbsp; The name of the file will be specified on the 
+command line.&nbsp; The file will contain four lines of integers: the first line 
+will contain the number of data items on the second line.&nbsp; The third line 
+will contain the number of data items on the fourth line.&nbsp; The first and 
+third lines are not part of the data.&nbsp; The integers on line two and four 
+will be separated by spaces.&nbsp; The integers will be between 0 and 99.&nbsp; 
+There can be duplicate integers on one line but the program should not add the 
+duplicate integer to the set.&nbsp; Therefore, the number on line one and three 
+does not necessarily mean the number of integers in the set.&nbsp; After the 
+integers are read in, the program will print out the elements of each set and 
+then perform and output the intersection, union and difference of each set. Make 
+sure that each function and operator is used at least once to properly test the 
+class. </P>
+<P>&nbsp;</P>
+<P><B>Output</B></P>
+<P>Example input files and the corresponding output can be found in 
+/home/cs235/assign1.&nbsp; Make sure your output matches the sample output 
+<B>EXACTLY</B> for each input file you test.</P><U><B>
+<P>&nbsp;</P></B></U>
+<P><SPAN style="FONT-WEIGHT: 700; COLOR: #000000; TEXT-DECORATION: underline"><A 
+name="Assignment 2"><FONT size=4>Assignment #2</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN style="FONT-WEIGHT: bold">Due:</SPAN> Tue, 
+May 11, 2004 by midnight</SPAN></P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 2">Assignment 
+#2 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000">Copy and look at the file stack.h from the 
+directory /home/cs235/assign2. This is the class definition for a stack 
+object.</SPAN></P>
+<P><SPAN style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></P>
+<P><SPAN style="COLOR: #000000">Implement each member function in the stack 
+class in a single file.&nbsp;&nbsp; Make sure all functions from stack.h are 
+implemented in this file.&nbsp; Do not add or delete any part of the stack 
+definition found in stack.h. Only use the existing data members and functions 
+from stack.h. Here are some guidelines for each member function:</SPAN></P>
+<P style="MARGIN-LEFT: 0.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">Pop - pops off the 
+top element of the stack but does not return the value. Program will exit if it 
+tries to pop off a value from an empty stack and print the message: <SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">ERROR: Stack 
+Underflow</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 0.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">Push - puts a value 
+onto the top of the stack. Program will exit if it tries to push a value onto a 
+full stack and print the error message: <SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">ERROR: Stack 
+Overflow</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 0.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">Top() - returns the 
+value at the top of the stack but does not pop it off the stack. If the stack is 
+empty then print message: <SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">ERROR: Stack Empty</SPAN> and exit 
+the program. </SPAN></P>
+<P style="MARGIN-LEFT: 0.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">Empty() - a function 
+that checks if the stack is empty. Function should return true if the stack is 
+empty, false otherwise.</SPAN></P>
+<P style="MARGIN-LEFT: 0.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">Full() - a function 
+that checks if the stack is full. Function should return true if the stack is 
+full, false otherwise.</SPAN></P><BR><BR>
+<P>To test the functions copy the three programs (stack_test1.cpp, 
+stack_test2.cpp, stack_test3.cpp) from the directory /home/cs235/assign2 and 
+compile them with the stack functions file.&nbsp; For example:</P>
+<BLOCKQUOTE>
+  <P><FONT face="Courier New">g++ stack_test1.cpp <I>username</I>.cpp</FONT> 
+</P></BLOCKQUOTE>
+<P>This will create a single executable named <I>a.out</I>.&nbsp; Run the 
+executable and see if the correct output is generated.&nbsp; Do the same for the 
+other two test programs.&nbsp; Only turn in the file containing the stack class 
+member functions.</P>
+<P><BR></P>
+<P><B>Output</B></P>
+<P>A series of test files and what the output should look like can be found in 
+/home/cs235/assign2.&nbsp; Make sure your output matches the the same output 
+<B>EXACTLY</B> for each input file you test.</P><BR>
+<P><SPAN style="FONT-WEIGHT: 700; COLOR: #000000; TEXT-DECORATION: underline"><A 
+name="Assignment 3"><FONT size=4>Assignment #3</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN style="FONT-WEIGHT: bold">Due: </SPAN>Thu, 
+May 13, 2004 by </SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 3">Assignment 
+#3 Grading Sheet</A>
+<P><SPAN style="COLOR: #000000"></SPAN>&nbsp;</P>
+<P><SPAN style="COLOR: #000000">Write a program that does the following 
+steps:</SPAN></P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">1. Read an infix 
+expression from a file. The name of the file will be given on the command 
+line.</SPAN></P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">2. Write a function 
+that converts the infix expression into postfix using the algorithm discussed in 
+class and the example code found in the textbook.&nbsp; The books code can be 
+used but you can write your own conversion routine.&nbsp; Regardless, you must 
+use a stack to do the conversion.</SPAN></P>
+<P><SPAN 
+style="COLOR: #000000"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>3. 
+Write a function to output the assembly language equivalent of postfix 
+expression.&nbsp; Again, a stack must be used to do the conversion.</SPAN></P>
+<P style="MARGIN-LEFT: 0.5in"><SPAN style="COLOR: #000000">4. Repeat for the 
+next infix expression in the input file until all infix expressions have been 
+processed.</SPAN></P>&nbsp;
+<P>&nbsp;</P>
+<P>Here are some details on some aspects of the program:<BR></P>
+<UL>
+  <LI><SPAN style="COLOR: #000000">An infix expression can be made up of single 
+  letter variables and operators. The variables must be upper case only. The 
+  operators include +, -, *, and /. Parentheses are allowed and must be taken 
+  into consideration for precedence of the operators. An example of an infix 
+  expression is:</SPAN> </LI></UL>
+<P><SPAN 
+style="COLOR: #000000"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><I>(A 
++ B * C)/(D - E)</I></SPAN></P><BR>
+<UL>
+  <LI><SPAN style="COLOR: #000000">The postfix expression should contain no 
+  parentheses nor spaces between operators or operands. The above infix 
+  expression would convert into the following:</SPAN> </LI></UL>
+<P><SPAN 
+style="COLOR: #000000"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><I>ABC</I>*<I>+DE-/</I></SPAN></P><BR>
+<UL>
+  <LI><SPAN style="COLOR: #000000">The machine we are targeting is quite simple. 
+  It has a single register and 6 instructions:</SPAN> </LI></UL>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in">&nbsp;<SPAN 
+style="COLOR: #000000"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">LD<SPAN>&nbsp;&nbsp;</SPAN>A<SPAN>&nbsp;&nbsp;&nbsp;</SPAN>Places 
+operand A into the register.</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>ST<SPAN>&nbsp;&nbsp;</SPAN>A<SPAN>&nbsp;&nbsp;&nbsp;</SPAN>Places 
+the contents of the register into the variable A.</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>AD<SPAN>&nbsp;&nbsp;</SPAN>A<SPAN>&nbsp;&nbsp;&nbsp;</SPAN>Adds 
+the contents of the variable A to the register and stores the result in the 
+register.</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>SB<SPAN>&nbsp;&nbsp;</SPAN>A<SPAN>&nbsp;&nbsp;&nbsp;</SPAN>Subtracts 
+the contents of the variable from the register and stores the result in the 
+register.</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>ML<SPAN>&nbsp;&nbsp;</SPAN>A<SPAN>&nbsp;&nbsp;&nbsp;</SPAN>Multiplies 
+the contents of the register by the variable A and stores the result in the 
+register.</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>DV<SPAN>&nbsp;&nbsp;</SPAN>A<SPAN>&nbsp;&nbsp;&nbsp;</SPAN>Divides 
+the contents of the register by the variable A and stores the result into the 
+register.</SPAN></SPAN></P><BR>
+<BLOCKQUOTE>
+  <P><SPAN style="COLOR: #000000">Temporary variables will be needed and will be 
+  of the form <I>TEMPn</I>. </SPAN></P></BLOCKQUOTE><B>Output</B>
+<P>Example input files and output can be found in /home/cs235/assign3.&nbsp; 
+Make sure your output matches the sample output <B>EXACTLY</B> for each input 
+file you test.<BR></P>
+<P>&nbsp;</P>
+<P><SPAN style="FONT-WEIGHT: 700; COLOR: #000000; TEXT-DECORATION: underline"><A 
+name="Assignment 4"><FONT size=4>Assignment #4</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN style="FONT-WEIGHT: bold">Due: </SPAN>Mon, 
+May 17, 2004 by midnight</SPAN></P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 4">Assignment 
+#4 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000">Suppose a certain airport has one runway. In 
+each unit of time, one plane can land or one plane can take off, but not both. 
+Planes arrive ready to land or to take off at random times, so at any given unit 
+of time, the runway may be idle or a plane may be landing or taking off, and 
+there may be several planes waiting either to land or take off. We therefore 
+need two queues, called <I>landing</I> and <I>takeoff</I>, to hold these planes. 
+It is better to keep a plane waiting on the ground than in the air, so the 
+airport allows a plane to take off only if there are no planes waiting to land. 
+Hence, after receiving requests from new planes to land or take off, the airport 
+will allow the queue, <I>landing, </I>to land planes and only if the 
+<I>landing</I>&nbsp;queue is empty will it allow a plane to take off. We will 
+assume that each queue has a maximum of 5 planes.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000">Write a program to simulate this airport’s 
+operation. The program will run in a loop from 1 to <I>endtime</I>. Where 
+<I>endtime</I> is the number of units of time the simulation will run. The main 
+algorithm for this program will look as follows:</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">for curtime = 1 to 
+endtime</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;for i = 0 to 
+randnumber1</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create 
+new plane </SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if 
+landing queue is full</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;refuse 
+plane to land</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add 
+plane to landing queue</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;for i = 0 to 
+randnumber2</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;create 
+new plane</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if 
+takeoff queue is full</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;refuse 
+plane to takeoff</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;add 
+plane to takeoff queue</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;if landing queue 
+is not empty</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;land 
+next plane in landing queue</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;else if takeoff 
+queue is not empty</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;allow 
+next plane in takeoff queue to takeoff</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;else</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;runway 
+idle</SPAN></SPAN></P><BR><BR>
+<P><SPAN style="COLOR: #000000">Let <SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">randnumber1</SPAN> and <SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">randnumber2</SPAN> be numbers 
+generated from a Poisson distribution instead of a uniform distribution. See 
+random.cpp and random.h for the Poisson function.&nbsp;&nbsp; These files can be 
+found in /home/cs235/assign4 along with the queue.cpp and queue.h files. Simply 
+pass the Poisson function the expected number of arrivals or expected number of 
+departures per time unit and it will return a random integer.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000">Since the input is random there is no "exact 
+answer".&nbsp; A sample run of the program with user input listed in bold 
+follows:</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Units of time the simulation will 
+run: <SPAN style="FONT-WEIGHT: bold">30</SPAN></SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Expected number of arrivals per 
+time unit: <SPAN style="FONT-WEIGHT: bold">0.47</SPAN></SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Expected number of take offs rate 
+per time unit: <SPAN style="FONT-WEIGHT: bold">0.47</SPAN></SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Total 
+number of planes processed: 38</SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Number of 
+planes landed: 19</SPAN></P>
+<P><SPAN style="FONT-FAMILY: 'Courier New', monospace">Number of planes taken 
+off: 10</SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Number 
+left ready to land: 0</SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Number 
+left ready to take off: 1</SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Number of 
+planes refused use: 8</SPAN></P>
+<P><SPAN 
+style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Percentage of time 
+runway idle: 3.33%</SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Average 
+wait time to land: 1.11</SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">Average 
+wait time to take off: 8.60</SPAN></P><BR><BR>
+<P><SPAN style="FONT-WEIGHT: 700; COLOR: #000000; TEXT-DECORATION: underline"><A 
+name="Assignment 5"><FONT size=4>Assignment #5</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN></SPAN>Tue, May 18, 2004 by 
+</SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P>
+<P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 5">Assignment 
+#5 Grading Sheet</A></P>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">When a share of common stock of 
+some company is sold, the profit (or, sometimes, loss) is the difference between 
+the share's selling price and the share's purchase price</SPAN> This calculation 
+is easy to understand for a single purchase or sale. </SPAN></P><BR>
+<P><SPAN style="COLOR: #000000">When we buy shares of stock over a long period 
+of time and then decide to sell some (but not all) of them, we must identify the 
+shares actually being sold. The accepted method for identification is to assume 
+that the shares being sold are the ones that were bought first (the ones we've 
+owned the longest).</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000">For example, suppose we buy 100 shares at $10 
+per share on day 1; 200 shares at $25 per share on day 2; and 200 shares at $30 
+per share on day 3. Sometime later, we sell 100 shares for $35 each. Applying 
+the "sell the oldest ones first" principles means that the 100 shares we sold 
+were the 100 which where bought on day 1 and our profit on the sale is 100*(35 - 
+10) = $2500. Sometime later we sell 300 shares at $27 per share. These 300 
+shares consist of the 200 shares bought on day 2 and 100 of the 200 shares 
+bought on day 3. So our profit is 200 * (27 - 25) + 100 * (27 - 30) = $400 - 
+$300 = $100. The remaining 100 shares bought on day 3 will be the first ones 
+sold the next time we sell shares.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000">Write a program that will read "BUY" and "SELL" 
+transactions from a file. The file will be specified on the command line. Each 
+transaction will consist of:</SPAN></P>
+<P><SPAN 
+style="COLOR: #000000"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>1. 
+The transaction type -- either BUY or SELL</SPAN></P>
+<P><SPAN 
+style="COLOR: #000000"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>2. 
+An integer number of shares of stock.</SPAN></P>
+<P><SPAN 
+style="COLOR: #000000"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>3. 
+A floating point price per share (no leading $)</SPAN></P>
+<P>&nbsp;</P>
+<P><SPAN style="COLOR: #000000">There will be one transaction per line.&nbsp; 
+The items making up a transaction will be separated by one space. </SPAN></P>
+<P>&nbsp;</P>
+<P><SPAN style="COLOR: #000000">A BUY transaction will be stored in the STL's 
+deque. A SELL transactions will be processed as they occur.</SPAN></P><BR>
+<P><B>Output</B></P>
+<P>Example input files and output can be found in /home/cs235/assign5.&nbsp; 
+Make sure your output matches the sample output <B>EXACTLY</B> for each input 
+file you test.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 6"><FONT size=4>Assignment #6</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Thu, May 20, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P>
+<P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 6">Assignment 
+#6 Grading Sheet</A></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">An <I><SPAN 
+style="FONT-WEIGHT: bold">order n matrix</SPAN></I> is an <I>nxn</I> array of 
+numbers. For example,</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>(3)</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">is a 1 x 1 
+matrix,</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>1<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>3</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 1.5in; TEXT-INDENT: -1.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>-2<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>8</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">is a 2 x 2 matrix 
+and</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 2.5in; TEXT-INDENT: -2.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 2.5in; TEXT-INDENT: -2.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>1<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>3<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>4<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>6</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 2.5in; TEXT-INDENT: -2.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>2<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>-5<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>0<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>8</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 2.5in; TEXT-INDENT: -2.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>3<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="FONT-WEIGHT: bold">7</SPAN><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>6<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>4</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 2.5in; TEXT-INDENT: -2.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>2<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>0<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>9<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>-1</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">is a 4 x 4 matrix. Define the 
+<I><SPAN style="FONT-WEIGHT: bold">minor</SPAN></I><SPAN 
+style="FONT-WEIGHT: bold"> </SPAN>of an element <I>x</I> in a matrix as the 
+submatrix formed by deleting the row and column containing <I>x.</I> In the 
+preceding example of a 4 x 4 matrix, the minor of the element 7 is the 3 x 3 
+matrix</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 2in; TEXT-INDENT: -2in">&nbsp;</P>
+<P style="MARGIN-LEFT: 2in; TEXT-INDENT: -2in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>1<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>4<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>6</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 2in; TEXT-INDENT: -2in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>2<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>0<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>6</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 2in; TEXT-INDENT: -2in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>2<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>9<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>-1</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">Clearly the order of a minor of 
+any element is 1 less than the order of the original matrix. Denote the minor of 
+an element a[i,j] by minor(a[i,j]).</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">Define the <SPAN 
+style="FONT-WEIGHT: bold"><I>determinant</I></SPAN> of a matrix a (written 
+<I>det(a)</I>) recursively as follows:</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>1. 
+If <I>a</I> is a 1x1 matrix (x), det(a) = x.</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>2. 
+If a is of an order greater than 1, compute the determinant of a as 
+follows:</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>a. 
+Choose the first row. For each element a[i,j] in this row or 
+column</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;form 
+the product:</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>power(-1,i+j)*a[i,j]*det(minor(a[i,j]))</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;where 
+i and j are the row and column position of the element choosen, 
+</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if 
+a[i,j] is the element chosen, det(minor(a[i,j])) is the 
+determinant</SPAN></SPAN></P>
+<P><SPAN 
+style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;of 
+the minor of a[i,j], and power(m,n) is the value of m raised to the nth 
+power.</SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>b. 
+det(a) = sum of all these products.</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">Write a program that reads in a 
+matrix from a file, prints <I><SPAN style="FONT-WEIGHT: bold">a</SPAN></I> in 
+matrix form, and then prints the value of det(a), where det is a function that 
+computes the determinant of a matrix.</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold"><SPAN 
+style="TEXT-DECORATION: underline">Input</SPAN></SPAN></SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">A file 
+name containing one matrix will be given on the command line. The file will 
+first contain the order, <SPAN style="FONT-WEIGHT: bold"><I>n</I></SPAN>, and 
+then each row of the matrix will follow.&nbsp; One row in the file is one row in 
+the matrix.&nbsp; Its an error to read in a non-square matrix. </SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold"><SPAN 
+style="TEXT-DECORATION: underline">Output</SPAN></SPAN></SPAN></SPAN></P>
+<P>Example input files and output can be found in /home/cs235/assign6.&nbsp; 
+Make sure your output matches the sample output <B>EXACTLY</B> for each input 
+file you test.</P><BR>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 7"><FONT size=4>Assignment #7</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Fri, May 21, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 7">Assignment 
+#7 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">Write a program that compares the 
+STL <I>sort</I> function with the quicksort function. The quicksort function is 
+in the directory /home/cs235/examples/sorting. </SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">The program that will generate 
+random numbers between 1 and 500 for array sizes 10000, 20000, 30000, 40000, 
+50000, 60000, 70000, 80000, 90000, and 100000. After an array of size <I>n</I> 
+is filled with random numbers sort it with the STL <I>sort</I> function then 
+sort with the quicksort function.</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Find a 
+way to time how long it take to sort each of the array sizes for the two sorting 
+functions. The output of your program should look similar to this where xxxxx is 
+the time it took to sort the given size.<SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 4.5in; TEXT-INDENT: -4.5in">&nbsp;</P>
+<P style="MARGIN-LEFT: 4.5in; TEXT-INDENT: -4.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;Size<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>&nbsp;&nbsp;&nbsp; 
+STL-sort<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&nbsp; 
+quicksort</SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000; FONT-FAMILY: 'Courier New', monospace">&nbsp;10000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;20000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;30000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;40000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;50000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;60000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;70000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;80000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">&nbsp;90000<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P>
+<P style="MARGIN-LEFT: 3.5in; TEXT-INDENT: -3.5in"><SPAN 
+style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">100000<SPAN>&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx<SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>xxxxxx</SPAN></SPAN></P><BR><BR>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 8"><FONT size=4>Assignment #8</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Tue, May 25, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 8">Assignment 
+#8 Grading Sheet</A><BR><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Complete 
+the Poly class in the poly.cpp file in the examples directory. Add to the class 
+the following functions: </SPAN></P>
+<UL>
+  <LI><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">The 
+  overloaded operator + that adds two polynomials together. </SPAN>
+  <LI>The overloaded operator &lt;&lt; to output a polynomial. 
+  <LI>A function named <I>insert</I> to insert a term into a polynomial. 
+  <LI>Overload the () to evaluate a polynomial at a value x<I> </I>and return 
+  its value at x. </LI></UL>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write a 
+program that reads two polynomials from a file, adds them, prints the results, 
+reads a single value from a file, evaluates the sum at that number and prints 
+out this result.&nbsp; The first line of the input file will contain the 
+</SPAN>number of terms for the first polynomial.&nbsp; This line will be 
+followed by same number of lines as terms (an error will result if there are not 
+enough lines).&nbsp; Each line will contain a pairs of number separated by a 
+space.&nbsp; The first number will be the coefficient and the second number will 
+be the exponent.&nbsp; This will be followed with the value to evaluate the 
+polynomial.&nbsp; The next polynomial will follow in the same format as the 
+first polynomial.&nbsp; See the example input files for examples of the input 
+file format.</P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold; TEXT-DECORATION: underline">Output</SPAN></SPAN></P>
+<P>Example input files and output can be found in /home/cs235/assign8.&nbsp; 
+Make sure your output matches the sample output <B>EXACTLY</B> for each input 
+file you test.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 9"><FONT size=4>Assignment #9</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Wed, May 26, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 9">Assignment 
+#9 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write the 
+member functions for the Node class definition found in node.h in the directory 
+/home/cs235/assign9.&nbsp; </SPAN><SPAN style="COLOR: #000000">Make sure all 
+functions from node.h are implemented.&nbsp; Do not add or delete any part of 
+the node definition found in node.h. Only use the existing data members and 
+functions from node.h.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write a 
+program that creates a linked list of 100 nodes. Each node will contain a single 
+integer. The integers will be read in from a file.&nbsp; The file name will 
+given on the command line. As each node is created insert it into the linked 
+list in ascending order. In a sense you are performing an insertion sort. Print 
+out the values of each node (10 per line) after all of the nodes have been 
+inserted into the linked list.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Make sure 
+all code is in one file (node.h and the code for this assignment) and turn into 
+the appropriate directory.&nbsp; The node.h file should not be #included but be 
+a part of the code you turn in.</SPAN></P>&nbsp;
+<P><SPAN 
+style="FONT-WEIGHT: bold; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline">Output</SPAN></P>
+<P>Example input files and output can be found in /home/cs235/assign9.&nbsp; 
+Make sure your output matches the sample output <B>EXACTLY</B> for each input 
+file you test.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 10"><FONT size=4>Assignment #10</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Fri, May 28, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 10">Assignment 
+#10 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write the 
+member functions for the List class definition found in list.h in the directory 
+/home/cs235/assign10.</SPAN></P>&nbsp;
+<P>To test the functions copy the three programs (listtest_del.cpp, 
+listtest_ins.cpp, listtest_lookup.cpp) and the test input files 
+(assign10_test1.in, assign10_test2.in, assign10_test3.in) from the directory 
+/home/cs235/assign10 and compile the programs with the list functions 
+file.&nbsp; For example:</P>
+<BLOCKQUOTE>
+  <P><FONT face="Courier New">g++ listtest_del.cpp <I>username</I>.cpp</FONT> 
+  </P></BLOCKQUOTE>
+<P>This will create a single executable named <I>a.out</I>.&nbsp; Run the 
+executable and see if the correct output is generated.&nbsp; Do the same for the 
+other two test programs.&nbsp; Only turn in the file containing the list class 
+member functions.</P>
+<P>&nbsp;</P>
+<P><B>Output</B></P>
+<P>A series of test files and what the output should look like can be found in 
+/home/cs235/examples/assign10.&nbsp; Make sure your output matches the same 
+output <B>EXACTLY</B> for each input file you test.</P><BR>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 11"><FONT size=4>Assignment #11</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Tue, Jun 1, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 11">Assignment 
+#11 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Insert 
+all of reserved words of C++ into a hash table of size 67. Use a hash function 
+that adds up the ASCII values of each character in the reserved word and then 
+does a modulus of 67 on this sum. The file of reserved words can be found in 
+/home/cs235/assign11 and is named assign11.in.&nbsp; When inserting items into 
+the hash table use chaining as the collision resolution policy as discussed in 
+class.&nbsp; Insert items at the end of the linked list not the 
+front.</SPAN></P><BR>
+<P>The example output can be found in the 
+directory&nbsp;/home/cs235/assign11.&nbsp; Make sure your output matches the 
+same output <B>EXACTLY</B> for the input file.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 12"><FONT size=4>Assignment #12</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Thu, Jun 3, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 12">Assignment 
+#12 Grading Sheet</A>
+<P>&nbsp;</P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">Generating the Fibonacci numbers 
+is a straight forward exercise. However, due to constraints on the size of 
+memory locations, only a limited number of Fibonacci numbers can be generated. 
+To overcome this limitation we will be doing addition of long positive integers 
+using doubly-linked lists.</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">The Fibonacci numbers are computed 
+as follows:</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">F<SUB>1</SUB> = 
+1</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">F<SUB>2</SUB> = 
+1</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">F<SUB>3</SUB> = F<SUB>1</SUB> + 
+F<SUB>2</SUB></SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">F<SUB>4</SUB> = F<SUB>2</SUB> + 
+F<SUB>3</SUB></SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">F<SUB>5</SUB> = F<SUB>3</SUB> + 
+F<SUB>4</SUB></SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">.</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">.</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">.</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">F<SUB>n</SUB> = F<SUB>n-1</SUB> + 
+F<SUB>n-2</SUB></SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">Each node of the linked list will 
+contain 9 digits of the number. Your program will perform the addition of the 
+Fibonacci numbers using the addition algorithm discussed in class. The user will 
+be prompted for which Fibonacci number is to be computed. The program will then 
+compute the Fibonacci number and only display that Fibonacci number. No 
+intermediate results should be displayed. The following is an example run for 
+this program:</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Enter the Fibonacci number you 
+wish to see: <SPAN style="FONT-WEIGHT: bold">1000</SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 'Arial', sans-serif"></SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">43466557686937456435688527675040625802564660517371780402481729089536555417949051890403879840079255169295922593080322634775209689623239873322471161642996440906533187938298969649928516003704476137795166849228875</SPAN><SPAN 
+style="FONT-FAMILY: 'Arial', sans-serif"></SPAN></SPAN></P>&nbsp;
+<P><B>Output</B></P>
+<P>Make sure your output matches the above number <B>EXACTLY</B>.&nbsp; The file 
+<FONT face="Courier New">assign12.out</FONT> which contains this number can be 
+found in the directory /home/cs235/assign12 to help you match the output 
+exactly.</P>
+<P><BR><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 13"><FONT size=4>Assignment #13</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Fri, Jun 4, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 13">Assignment 
+#13 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write the 
+member functions for the BTree class definition found in tree.h in the directory 
+/home/cs235/examples/trees</SPAN></P><BR>
+<P>To test the functions copy the program (tree_test1.cpp and tree_test2.cpp) 
+and the test files (assign13_test1.in and assign13_test2.in) from the directory 
+/home/cs235/assign13.&nbsp; Compile the test files with the binary tree 
+functions file.&nbsp; For example:</P>
+<BLOCKQUOTE>
+  <P><FONT face="Courier New">g++ tree_test1.cpp <I>username</I>.cpp</FONT> 
+</P></BLOCKQUOTE>
+<P>This will create a single executable named <I>a.out</I>.&nbsp; Run the 
+executable and see if the correct output is generated.&nbsp; Do the same for the 
+other two test programs.&nbsp; Only turn in the file containing the binary tree 
+class member functions.</P>
+<P>&nbsp;</P>
+<P><B>Output</B></P>
+<P>A series of output files and what the output should look like can be found in 
+/home/cs235/assign13.&nbsp; Make sure your output matches the same output 
+<B>EXACTLY</B> for each input file you test.</P>
+<P>&nbsp;</P><BR>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 14"><FONT size=4>Assignment #14</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Tue, Jun 8, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 14">Assignment 
+#14 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Implement 
+the Binary Search Tree member functions from the file <SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">bst.h</SPAN><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">. found in the directory 
+/home/cs235/examples/trees. </SPAN></SPAN></P><BR>
+<P>To test the functions copy the program bst_test.cpp and the test file 
+assign14.in from the directory /home/cs235/assign13.&nbsp; Compile the 
+bst_test.cpp file with the binary search tree functions file:</P>
+<BLOCKQUOTE>
+  <P><FONT face="Courier New">g++ bst_test.cpp <I>username</I>.cpp</FONT> 
+</P></BLOCKQUOTE>
+<P>This will create a single executable named <I>a.out</I>.&nbsp; Run the 
+executable and see if the correct output is generated.&nbsp; Do the same for the 
+other two test programs.&nbsp; Only turn in the file containing the binary 
+search tree class member functions.</P>
+<P>&nbsp;</P>&nbsp;
+<P><B>Output</B></P>
+<P>The output for this assignment can be found in /home/cs235/assign16.&nbsp; 
+Make sure your output matches the same output <B>EXACTLY</B>.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 15"><FONT size=4>Assignment #15</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Wed, Jun 9, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 15">Assignment 
+#15 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">Implement the Huffman Code project 
+as outlined in class as follows:</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Read the 
+letters and frequencies from a file named </SPAN><SPAN 
+style="COLOR: #000000; FONT-FAMILY: Courier New, monospace">assign15.in</SPAN><SPAN 
+style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">. An example file 
+can be found at /home/cs235/assign15.&nbsp; The file contains frequencies for 
+each letter of the alphabet. The first frequency in the file is for the letter 
+A, the second for letter B, ... down to the last line for letter 
+Z.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Create 
+the Huffman binary tree as outlined in class.&nbsp; Make sure that the following 
+rules are followed when creating the tree so that the output will 
+match:</SPAN></P>
+<UL>
+  <LI>When creating a new tree always put the smallest valued node as the left 
+  child and the next smallest valued node as the right child. 
+  <LI>If the values of the two nodes being inserted are identical then the first 
+  node encountered will be the left child and the second node will be the right 
+  child. </LI></UL>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">After the 
+tree is completed, print out each letter and its Huffman 
+coding.</SPAN></P>&nbsp;
+<P><B>Output</B></P>
+<P>The output for this assignment can be found in /home/cs235/assign15.&nbsp; 
+Make sure your output matches the same output <B>EXACTLY</B>.<BR><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 16"><FONT size=4>Assignment #16</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Fri, Jun 11, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 16">Assignment 
+#16 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif">For this assignment write a 
+program that uses an associative array to count the number of occurrences of 
+words from a data file. The array indexes will be the words and the value of 
+each element of the array will be a count of the number of occurrences of that 
+word. STL maps will be used to implement the associative 
+array.</SPAN></SPAN></P>
+<P>&nbsp;</P>
+<P>The input filename will be specified as a command line argument. </P>
+<P>&nbsp;</P>
+<P>The input file will be the text of the Book of Mormon.&nbsp; There will be no 
+verse numbers, chapter numbers or chapter summaries in the text. The input file 
+can be found in /home/cs235/assign16.&nbsp; </P>
+<P>&nbsp;</P>
+<P><B>Output</B></P>
+<P>The output for this assignment can be found in /home/cs235/assign16.&nbsp; 
+Make sure your output matches the same output <B>EXACTLY</B>.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 17"><FONT size=4>Assignment #17</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Mon, Jun 14, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 17">Assignment 
+#17 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Implement 
+the heap sort as a function using the algorithm discussed in class.&nbsp; You 
+may used the STL vector container on an array to store the data.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write a 
+driver program that gets a filename from the command line.&nbsp; The program 
+then opens this file and reads in the numbers.&nbsp; The numbers will be between 
+1 and 50.&nbsp;&nbsp; Have the program first heapify the array then call the 
+heap sort function. Then print out the values so they match the example output 
+files.</SPAN></P>
+<P>&nbsp;</P>
+<P><B>Output</B></P>
+<P>A series of test files and what the output should look like can be found in 
+/home/cs235/examples/assign17.&nbsp; Make sure your output matches the same 
+output <B>EXACTLY</B> for each input file you test.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 18"><FONT size=4>Assignment #18</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Tue, Jun 15, 2004, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 18">Assignment 
+#8 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write a 
+function that implements the merge sort as a linked list.&nbsp;&nbsp; Use may 
+use your linked list code or the STL list container but you may not use the 
+list.sort function!!</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write a 
+driver program that gets a filename from the command line.&nbsp; The program 
+then opens this file and reads in the numbers into a linked list.&nbsp; Insert 
+each number at the beginning of the list.&nbsp; The numbers will be between 1 
+and 50.&nbsp; As each number is placed into the list, print its value on the 
+screen (10 numbers per line).&nbsp; Then call the merge sort function and output 
+the resulting linked list. </SPAN></P>
+<P>&nbsp;</P>
+<P><B>Output</B></P>
+<P>A series of test files and what the output should look like can be found in 
+/home/cs235/examples/assign18.&nbsp; Make sure your output matches the same 
+output <B>EXACTLY</B> for each input file you test.</P><BR>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 19"><FONT size=4>Assignment #19</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Wed, Jun 16, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 19">Assignment 
+#19 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Implement 
+the following functions from the Graph ADT using an adjacency-list 
+representation:</SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>- 
+Construct an empty graph</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>- 
+Check if graph is empty</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>- 
+Insert a new node</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>- 
+Insert a directed edge between two existing nodes or from a node to 
+itself</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write a 
+driver program to test the graph functions that creates the following 
+graph:</SPAN></P><BR>
+<DIV class=WPParaBoxWrapper style="CLEAR: left; FLOAT: left; WIDTH: 412px"><SPAN 
+class=WPParaBox 
+style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none"><IMG 
+height=257 alt=assignments.gif src="assignments_s04_files/assignments.gif" 
+width=412 
+border=0></SPAN></DIV><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>Please 
+use the STL list container to represent the linked list.
+<P><BR></P>
+<P>The output for this assignment can be found in /home/cs235/assign19.&nbsp; 
+Make sure your output matches the same output <B>EXACTLY</B>.</P>
+<P><BR></P>
+<P><FONT size=4><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 20">Assignment #20</A></SPAN></FONT></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due:</SPAN> Thu, Jun 17, 2004 by </SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 20">Assignment 
+#20 Grading Sheet</A>
+<P><STRIKE><BR></STRIKE></P>
+<P><SPAN 
+style="FONT-WEIGHT: bold; COLOR: #000000; FONT-FAMILY: Times New Roman, serif">Assignment</SPAN></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Write a 
+program that creates the following graph using your graph 
+library:</SPAN></P><STRIKE><BR><BR></STRIKE>
+<DIV class=WPParaBoxWrapper style="CLEAR: left; FLOAT: left; WIDTH: 449px"><SPAN 
+class=WPParaBox 
+style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; TEXT-DECORATION: line-through"><IMG 
+height=224 alt=assignments1.gif src="assignments_s04_files/assignments1.gif" 
+width=449 
+border=0></SPAN></DIV><STRIKE><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR></STRIKE>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Implement 
+the breadth-first and depth-first algorithms as discussed in class and then 
+apply these functions to visit the nodes in the above graph. When adding 
+adjacent nodes to the container please put them on in alphabetical 
+order.</SPAN></P><BR>
+<P>The output for this assignment can be found in /home/cs235/assign20.&nbsp; 
+Make sure your output matches the same output <B>EXACTLY</B>.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: Times New Roman, serif; TEXT-DECORATION: underline"><A 
+name="Assignment 21"><FONT size=4>Assignment #21</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Mon, Jun 21, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet 21">Assignment 
+#21 Grading Sheet</A>
+<P><BR></P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Implement 
+the Shortest Path Algorithm as discussed in class.<SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"></SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Read the 
+graph information from a file where the file name is specified on the command 
+line.&nbsp; The format of the file will be one line per vertex. The vertex 
+number will come first followed by the nodes adjacent to the vertex. All numbers 
+will be separated by one space.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">The user 
+will first enter a beginning vertex and then an ending vertex. The program will 
+then fill out the table T as described in class using the beginning vertex as 
+the starting vertex. The program will then print out the shortest path from the 
+beginning vertex to ending vertex. </SPAN></P>&nbsp;
+<P><B>Output</B></P>
+<P>The input and output for this assignment can be found in 
+/home/cs235/assign21.&nbsp; Please note the user must enter the starting node 
+and ending node.&nbsp; Make sure your output matches the same output 
+<B>EXACTLY</B>.</P>
+<P><BR></P>
+<P><SPAN 
+style="FONT-WEIGHT: 700; COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif; TEXT-DECORATION: underline"><A 
+name="Final Project"><FONT size=4>Final Project</FONT></A></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">Due: </SPAN>Wed, Jun 23, 2004 by 
+</SPAN></SPAN>midnight</P>
+<P><B>Turn In: </B>submit <I>filename</I></P><B>Grading - </B>See <A 
+href="http://emp.byui.edu/camerong/cs235/grading.htm#Grading Sheet Final Project">Final 
+Grading Sheet</A>
+<P>&nbsp;</P>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Open up a 
+GEDCOM file named cameron.ged. Find a copy of this file in 
+/home/cs235/examples/final. Read and store all individuals in this GEDCOM file 
+in a linked list.&nbsp; Each node of the linked lists will contain the 
+individuals full name, birth date and a pointer to the mother and father.&nbsp; 
+After all the individuals have been inserted into a linked list, set the mother 
+and father pointers for each person in the list.</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">Sort the 
+list alphabetically by last name, then first name, then by birth date (if 
+necessary) using the Merge Sort. Print the list of sorted individuals to a file 
+called sorted.dat. The file should contain one line per person and should look 
+as follows:</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Gregory Lawrence Cameron, b. 8 Nov 
+1963</SPAN></SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Lawrence 
+Clyde Cameron, b. 22 Dec 1941</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Paul 
+Roland Cameron, b. 2 Jul 1908</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>...</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>...</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000; FONT-FAMILY: 'Times New Roman', serif">In 
+addition to your program printing out the sorted list of names, your program 
+should print on the screen the following:</SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">The Ancestors of Gregory Lawrence 
+Cameron:</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Parents:</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Lawrence 
+Clyde Cameron b. 22 Dec 941</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Bonnie 
+Lorraine Downen b. 28 Mar 1945</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Grand Parents:</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Paul 
+Roland Cameron b. 2 Jul 1908</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Margaret 
+Ferne Simdars b. 7 Dec 1911</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Edward 
+Rodney Downen b. 10 Nov 1917</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>Mildred 
+Claire Marsh b. 10 Dec 1919</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace">Great 
+Grandparents</SPAN></SPAN></P>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Courier New', monospace"><SPAN>&nbsp;&nbsp;&nbsp;&nbsp;</SPAN>. 
+. .</SPAN></SPAN></P><BR>
+<P><SPAN style="COLOR: #000000"><SPAN 
+style="FONT-FAMILY: 'Times New Roman', serif"><SPAN 
+style="FONT-WEIGHT: bold">YOU MAY NOT USE THE STL CONTAINERS, ITERATORS OR 
+ALGORITHMS ON THIS ASSIGNMENT!!!</SPAN></SPAN></SPAN></P>
+<P>&nbsp;</P>
+<P><B>Output</B></P>
+<P>See the directory /home/cs235/final/ for the exact output of the sorted list 
+and the pedigree.&nbsp; Make sure your output matches the same output 
+<B>EXACTLY</B> for each input file you test.</P></BODY></HTML>
