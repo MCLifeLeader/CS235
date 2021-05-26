@@ -40,6 +40,7 @@ class Stack
       void push(char item);
       void pop(void);
       bool empty(void);
+      int size(void);
       bool full(void);
       ~Stack();          // default destructor
 };
@@ -336,6 +337,16 @@ bool Stack::empty()
    else
       return ( false );
 }
+
+/*************************************************************************
+*  Purpose:
+*     Return the count of items in the stack
+**************************************************************************/
+int Stack::size()
+{
+    return topPtr + 1;
+}
+
 
 /*************************************************************************
 *  Purpose:
